@@ -1,0 +1,22 @@
+.header {
+    background-image: url('../assets/Rectangle\ 10.png');
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100%;
+   height: 300px;
+   margin-bottom: 40px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.texto{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
