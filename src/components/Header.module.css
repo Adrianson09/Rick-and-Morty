@@ -17,6 +17,8 @@
 
 .texto{
     color: #fff;
+    font-family: 'Titillium Web', sans-serif;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px 2px black;
 }
