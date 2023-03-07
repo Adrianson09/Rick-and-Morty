@@ -1,0 +1,21 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.input{
+    border-radius: 5px
+}
+
+.btn{
+    background-color: #379c35;
+    color:white ;
+    padding: 4px;
+    transition-duration: 500ms;
+}
+.btn:hover{
+    background-color: #262623c9;
+    transform: scale(1.2);
+}
