@@ -5,7 +5,7 @@ export default function SearchBar(props) {
    return (
       <div className={styles.contenedor}>
          <input className={styles.input} type='search' />
-      <button className={styles.btn} onClick={()=>{props.onSearch(2)}}>Agregar</button>
+      <button className={styles.btn} onClick={(id)=>{props.onSearch(2)}}>Agregar</button>
       </div>
    );
 }
