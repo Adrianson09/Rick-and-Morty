@@ -8,12 +8,10 @@
    margin-bottom: 40px;
 }
 
-@media (max-width:500px){
-.principal{
-    display: flex;
-    flex-direction: column;
-}
-}
+
+
+
+
 
 .principal{
     display: flex;
@@ -23,6 +21,19 @@
     margin-bottom: -140px;
 
 }
+
+@media (max-width:500px){
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal img{
+        
+        width: 50%;
+        padding: 4px;
+        margin: 0 auto;
+    }
+    }
 
 .texto{
     display: none;
