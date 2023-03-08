@@ -17,11 +17,17 @@ function App () {
        .then((data) => {
           if (data.name) {
              setCharacters((oldChars) => [...oldChars, data]);
-          } else {
+          }else {
              window.alert('No hay personajes con ese ID');
           }
        });
   }
+
+  const onClose = (id) =>{
+    setCharacters(
+      characters.filter(character => character.id !== id)
+    )
+  };
   return (
     <div className='App' style={{ padding: '0px' }}>
       <Nav onSearch={onSearch}/>
@@ -29,6 +35,7 @@ function App () {
       <img src={personajes} alt='imagen texto personajes' style={{ padding: '20px' }} />
         <Cards
           characters={characters}
+          onClose={onClose}
         />
       </div>
       <footer>
