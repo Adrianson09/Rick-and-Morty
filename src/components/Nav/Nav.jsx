@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Nav.module.css'
-import logo from '../assets/Rectangle1.svg'
-import SearchBar from './SearchBar'
+import logo from '../../assets/Rectangle1.svg'
+import SearchBar from '../SearchBar/SearchBar'
 import { Helmet } from 'react-helmet';
 
 

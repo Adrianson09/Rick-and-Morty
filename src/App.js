@@ -1,9 +1,9 @@
 import './App.css'
 import { useState } from 'react'
-import Cards from './components/Cards.jsx'
-import { Nav } from './components/Nav'
+import Cards from './components/Cards/Cards.jsx'
+import { Nav } from './components/Nav/Nav'
 import personajes from './assets/Frame 13.svg'
-import { Footer } from './components/Footer'
+import { Footer } from './components/Footer/Footer'
 
 
 function App () {
