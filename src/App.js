@@ -1,39 +1,44 @@
 import './App.css'
-import Card from './components/Card.jsx'
+import { useState } from 'react'
 import Cards from './components/Cards.jsx'
-import { Header } from './components/Header'
-import SearchBar from './components/SearchBar.jsx'
-import characters, {Rick} from './data.js'
+import { Nav } from './components/Nav'
 import personajes from './assets/Frame 13.svg'
+import { Footer } from './components/Footer'
+
 
 function App () {
+  const [characters, setCharacters] = useState([]);
+  
+  const onSearch =  (character) => {
+    const URL_BASE = "https://be-a-rym.up.railway.app/api";
+    const API_KEY = 'dd9722a0e9e9.a899ed973d85f8c87391';
+    fetch(`${URL_BASE}/character/${character}?key=${API_KEY}`)
+       .then((response) => response.json())
+       .then((data) => {
+          if (data.name) {
+             setCharacters((oldChars) => [...oldChars, data]);
+          } else {
+             window.alert('No hay personajes con ese ID');
+          }
+       });
+  }
   return (
     <div className='App' style={{ padding: '0px' }}>
-      <Header/>
+      <Nav onSearch={onSearch}/>
       <div>
-        <img src={personajes} alt='imagen texto personajes' style={{ padding: '20px' }} />
-        <Card
-          name={Rick.name}
-          species={Rick.species}
-          gender={Rick.gender}
-          image={Rick.image}
-          onClose={() => window.alert('Emulamos que se cierra la card')}
-        />
-      </div>
-      <hr />
-      <div>
+      <img src={personajes} alt='imagen texto personajes' style={{ padding: '20px' }} />
         <Cards
           characters={characters}
         />
       </div>
-      <hr />
-      <div>
-        <SearchBar
-          onSearch={(characterID) => window.alert(characterID)}
-        />
-      </div>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }
 
 export default App
+
+
+

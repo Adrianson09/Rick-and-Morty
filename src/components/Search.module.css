@@ -1,21 +1,31 @@
 .contenedor{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    /* gap: 30px; */
     padding: 40px 0;
 }
 
 .input{
-    border-radius: 5px
+    border-radius: 15px 0 0 15px;
+    border: 0;
+    outline: none;
+}
+.input:focus{
+    border: 0;
+}
+.input:active{
+    border: 0;
 }
 
 .btn{
-    background-color: #379c35;
+    background-color: #588157;
     color:white ;
     padding: 4px;
     transition-duration: 500ms;
+    border-radius: 0 15px 15px 0;
+    border: 0;
 }
 .btn:hover{
-    background-color: #262623c9;
-    transform: scale(1.2);
+    background-color: #3A5A40;
+    /* transform: scale(1.2); */
 }

@@ -1,9 +1,7 @@
 .App {
    text-align: center;
-   background-color: #1c1e1b;
-   /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5236376f-305d-42da-8e2d-48455360a090/de24jbm-76cb9ff5-f3be-4493-9aa1-7aeb6e1efd21.png/v1/fill/w_1280,h_720,q_80,strp/desktop_wallpaper_4k_rick_and_morty_by_jorgehardt_de24jbm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNTIzNjM3NmYtMzA1ZC00MmRhLThlMmQtNDg0NTUzNjBhMDkwXC9kZTI0amJtLTc2Y2I5ZmY1LWYzYmUtNDQ5My05YWExLTdhZWI2ZTFlZmQyMS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.lVih8_MzWLdXKAVEOGFReaoCTMpm1Int-NRaZqpM6rM'); */
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+   background-color: #DAD7CD;
+   /* DAD7CD, A3B18A, 588157, 3A5A40,  344E41*/
+   
    
 }

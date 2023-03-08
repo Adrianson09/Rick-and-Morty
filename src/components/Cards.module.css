@@ -1,8 +1,32 @@
+
+
+
 .cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.3rem;
+    padding-bottom: 1.2rem;
    
 
     
 }
+
+@media (min-width:768px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+       padding-bottom: 300px;
+    }
+}
+
+@media (min-width:1208px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+       padding-bottom: 300px;
+    }
+}
+
+

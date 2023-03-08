@@ -6,9 +6,15 @@
     height: 400px;
     background-color: #FFF;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.658);
     overflow: hidden;
+    transition-duration: 500ms;
   }
+
+.card:hover{
+  transform: scale(1.1);
+}
+
 
 
   
@@ -16,7 +22,7 @@
     position: absolute; 
     top: 10px;
     right: 10px;
-    background-color: red; 
+    background-color: rgb(169, 38, 38); 
     color: white; 
     border: none;
     border-radius: 50%;
@@ -31,7 +37,7 @@
     top: 75%;
     left: 35%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(52, 78, 65, 0.9);
     color: #FFF;
     padding: 5px 2px;
     font-size: 1.1rem;
@@ -52,7 +58,7 @@
   
   .titulos {
     margin-right: 10px;
-    color: #000;
+    color: #344E41;
     font-size: 1rem;
     justify-content: space-between;
 

@@ -1,14 +1,17 @@
 import React from 'react'
-import styles from './Header.module.css'
+import styles from './Nav.module.css'
 import logo from '../assets/Rectangle1.svg'
 import SearchBar from './SearchBar'
 import { Helmet } from 'react-helmet';
 
 
-export const Header = () => {
+
+export const Nav = ({onSearch}) => {
+
+ 
   return (
 
-    <div className={styles.header}>
+    <div className={styles.nav}>
       <Helmet>
   <link
     rel="preconnect"
@@ -27,7 +30,9 @@ export const Header = () => {
 
         <div className={styles.principal}>
             <img src={logo} alt="Logo App" />
-            <SearchBar/>
+            <SearchBar onSearch={onSearch}
+          
+        />
         </div>
         <div className={styles.texto}>
             <h1>Explora el multiverso con Rick y Morty</h1>
