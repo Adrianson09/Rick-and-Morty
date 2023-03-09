@@ -24,8 +24,13 @@
     .cards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-       padding-bottom: 300px;
+        gap: .5rem;
+       padding-bottom: 100px;
+       width: 90%;
+       padding-left: 20px;
+       padding-right: 20px;
+       min-height: 600px;
+       /* overflow: hidden; */
     }
 }
 

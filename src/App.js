@@ -15,10 +15,10 @@ function App () {
     fetch(`${URL_BASE}/character/${character}?key=${API_KEY}`)
        .then((response) => response.json())
        .then((data) => {
-          if (data.name) {
+          if (data.name && !characters.find((char) => char.id === data.id)) {
              setCharacters((oldChars) => [...oldChars, data]);
           }else {
-             window.alert('No hay personajes con ese ID');
+             window.alert('No hay personajes con ese ID o ya se encuentra en la pantalla');
           }
        });
   }
