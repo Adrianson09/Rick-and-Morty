@@ -15,7 +15,7 @@ export const Detail = () => {
     axios(`${URL_BASE}/character/${detailId}?key=${API_KEY}`)
     .then((response) => setCharacter(response.data)
     );
-    }, []);
+    }, [detailId]);
     
   return (
     <div className={styles.contenedor}>
