@@ -4,7 +4,7 @@ import logo from '../../assets/Rectangle1.svg'
 import SearchBar from '../SearchBar/SearchBar'
 import { Helmet } from 'react-helmet';
 // import { About } from '../About/About';
-import {Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 
@@ -36,10 +36,10 @@ export const Nav = ({onSearch}) => {
 
             <nav className={styles.navegacion}>
             <Link to={'/'}>
-            <a>Home</a>
+            <p>Home</p>
             </Link>
             <Link to={'/About'}>
-            <a>About</a>
+            <p>About</p>
             </Link>
            
             </nav>

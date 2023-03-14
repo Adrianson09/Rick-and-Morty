@@ -52,7 +52,7 @@
     
 }
 
-.navegacion a{
+.navegacion p{
     text-decoration: none;
     color: #DAD7CD;
     font-weight: bold;
@@ -60,7 +60,7 @@
     padding: 0 15px;
 }
 
-.navegacion a:hover{
+.navegacion p:hover{
     color: #A3B18A;
     
 }
