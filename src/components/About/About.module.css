@@ -1,0 +1,17 @@
+.text{
+    min-height: 700px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 35px;
+    text-align: justify;
+}
+
+.text h1, h3{
+    text-align: center;
+}
+
+.contenido{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

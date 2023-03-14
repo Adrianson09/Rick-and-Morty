@@ -3,6 +3,9 @@ import styles from './Nav.module.css'
 import logo from '../../assets/Rectangle1.svg'
 import SearchBar from '../SearchBar/SearchBar'
 import { Helmet } from 'react-helmet';
+// import { About } from '../About/About';
+import {Link, NavLink} from 'react-router-dom';
+
 
 
 
@@ -30,8 +33,20 @@ export const Nav = ({onSearch}) => {
 
         <div className={styles.principal}>
             <img src={logo} alt="Logo App" />
+
+            <nav className={styles.navegacion}>
+            <Link to={'/'}>
+            <a>Home</a>
+            </Link>
+            <Link to={'/About'}>
+            <a>About</a>
+            </Link>
+           
+            </nav>
+            
+            
             <SearchBar onSearch={onSearch}
-          
+            
         />
         </div>
         <div className={styles.texto}>

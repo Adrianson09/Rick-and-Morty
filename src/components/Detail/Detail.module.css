@@ -1,0 +1,106 @@
+.contenedor{
+  height: 700px;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #3A5A40;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+  .card{
+    padding: 45px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #a3b18a77;
+    width: 70%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin: 40px auto;
+    border-radius: 5px;
+
+  }
+
+  .imagen{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    border-radius: 50%;
+   
+   
+  }
+
+  .texto{
+    width: 70%;
+    color: #344E41;
+  
+  }
+
+  .texto span{
+    font-weight: bold;
+  }
+
+  .btn p{
+    background-color: #3A5A40 ;
+    text-decoration: none !important;
+    padding: 10px;
+    color: #DAD7CD;
+    width: 30%;
+    align-items: center;
+    margin: 10px auto;
+    transition-duration: 500ms;
+    transition-property: all;
+    border-radius: 5px;
+    
+
+  }
+
+
+
+  a{
+    text-decoration: none !important;
+  }
+
+  
