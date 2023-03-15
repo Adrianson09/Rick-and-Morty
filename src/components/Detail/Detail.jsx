@@ -51,7 +51,7 @@ export const Detail = () => {
         
     </div>
 
-<Link to={'/'} className={styles.btn} >
+<Link to={'/home'} className={styles.btn} >
 <p>Home</p>
 </Link>
 
