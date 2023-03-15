@@ -19,7 +19,7 @@ function App () {
 
   useEffect(() => {
     !access && navigate('/');
- }, [access]);
+ }, [access, navigate]);
 
   const username = 'adrian@email.com';
   const password = 'Henry2023';
